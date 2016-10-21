@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AutoWrap",
+		"Babel",
+		"BracketHighlighter",
+		"Chain of Command",
+		"Color Highlighter",
+		"Git",
+		"GitGutter",
+		"Glue",
+		"Huely Palette Extractor",
+		"Package Control",
+		"Seti_UI",
+		"Sublime Bookmarks",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-flow",
+		"SublimeLinter-jsxhint",
+		"Terminal",
+		"Terminality",
+		"TerminalProjectFolder",
+		"Whitespace"
+	]
+}

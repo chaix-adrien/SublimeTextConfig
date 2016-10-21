@@ -1,0 +1,66 @@
+[
+	// Go to left bracket
+    {
+        "keys": ["alt+left"],
+        "command": "bh_key",
+        "args":
+        {
+            "no_outside_adj": null,
+            "no_block_mode": null,
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {"select": "left"}
+            }
+        }
+    },
+    // Go to right bracket
+    {
+        "keys": ["alt+right"],
+        "command": "bh_key",
+        "args":
+        {
+            "no_outside_adj": null,
+            "no_block_mode": null,
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {"select": "right"}
+            }
+        }
+    },
+    { "keys": ["shift+enter"],
+        "command": "chain",
+        "args": {
+            "commands": [
+                ["move_to", {"to": "eol", "extend": false}],
+                ["insert", {"characters": "\n"}],
+            ]
+        },
+    },
+    { "keys": ["ctrl+s"],
+        "command": "chain",
+        "args": {
+            "commands": [
+                ["save"],
+                ["exec", { "cmd": ["/home/chaix_a/.bin/reload_js"]}],
+            ]
+        },
+    },
+    { "keys": ["ctrl+v"], "command": "paste_and_indent" },
+    { "keys": ["ctrl+shift+v"], "command": "paste" },
+    { "keys": ["ctrl+w"], "command": "paste_from_history" },
+    { "keys": ["tab"], "command": "reindent" },
+    { "keys": ["ctrl+tab"], "command": "indent" },
+    { "keys": ["ctrl+b"], "command": "exec", "args": { "cmd": ["/home/chaix_a/.bin/reload_sh"]} },
+    
+    { "keys": ["alt+keypad_enter"], "command": "sublime_bookmark", "args" : { "type" : "add"  } },
+    { "keys": ["alt+down"], "command": "sublime_bookmark", "args" : { "type" : "goto_next" } },
+    { "keys": ["alt+up"], "command": "sublime_bookmark", "args" : { "type" : "goto_previous" } },
+    { "keys": ["ctrl+alt+enter"], "command": "sublime_bookmark", "args" : { "type" : "goto" } },
+    { "keys": ["alt+enter"], "command": "sublime_bookmark", "args" : { "type" : "toggle_line" } }
+]
